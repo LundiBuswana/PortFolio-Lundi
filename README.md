@@ -1,6 +1,6 @@
 # Lundi Buswana — Personal Portfolio
 
-I’m Lundi Buswana — a third-year Computer Science student at Nelson Mandela University. This personal portfolio documents my journey from Tsolo to NMU and showcases the web systems assignments and projects I built while learning web development and data work.
+I’m Lundi Buswana — a third-year Computer Science student at Nelson Mandela University. This personal portfolio documents my journey from Tsolo to NMU and showcases the web systems assignments [...]
 
 ## Live preview
 Open the site locally in your browser:
@@ -49,18 +49,11 @@ This is a static site; you can host it on:
 - GitHub Pages — either move the site files to the repository root or configure Pages to serve from the `LundiBuswana/LundiBuswana/s221519769Buswana` folder (or use a branch / docs folder).
 - Netlify, Vercel, or any static host — upload the `s221519769Buswana` folder as the publish directory.
 
-If you want, I can add exact GitHub Pages steps for this repository structure.
-
 ## Contact
-Preferred contact handle: `lundibuswana`
-(Full contact emails are listed in the site `contact.html`.)
+- Email: lundibuswana@gmail.com
+- GitHub: `@lundibuswana`
 
 ## License
 No license file is included. If you want others to reuse this site, add a LICENSE (MIT is a common choice).
 
 ---
-
-If you want, I will:
-- Add a screenshot image or badge to the top of this README.
-- Add step-by-step GitHub Pages deployment commands tailored to this repo.
-- Wire the contact form to a simple serverless provider and update `contact.html`.
