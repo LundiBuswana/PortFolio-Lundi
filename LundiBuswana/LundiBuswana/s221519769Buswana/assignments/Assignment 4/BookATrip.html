@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="Styles/Stylesheet.css" type="text/css" rel="stylesheet" />
+        <title>Book a Trip - Time Traveller</title>
+    </head>
+    <!---s221519769 Lundi Buswana-->
+    <body>
+        <nav>
+             <ul>
+                <li> <a href="Home.html"> Home </a></li>
+                <li> <a href="TimeTravelTips.html"> Time Travel Tips </a></li>
+                <li> <a href="BookATrip.html"> Book a Trip </a></li>
+                <li> <a href="TravelerStories.html"> Traveller Stories </a></li>
+             </ul>
+        </nav>
+        <header>
+            <h1>Book Your Time Travel Adventure</h1>
+        </header>
+
+        <section class="bookingForm">
+            <form action="#">
+                
+                <table>
+                    <tr>
+                        <td>
+                            <label for="tname">
+                            Traveller Name: 
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" name="travllername" required id="tname" placeholder="Enter your name: ">
+                        </td>
+            
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="NumberofTravellers">
+                                Number of travellers: 
+                            </label>
+                        </td>
+                        <td>
+                            <input type="number" name="NumberofTravellers" required min="1" max="4" value="1" step="1" id="NumberofTravellers">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="tdestinations">
+                                Choose your destination era:
+                            </label>
+                        </td>
+                        <td>
+                            <select class="dropdown" name="destination" required id="tdestinations">
+                                <option value="" disabled selected>--Select an Era--</option>
+                                <option value="420">Ancient Egypt (1350 BCE)</option>
+                                <option value="380">Golden Age of Piracy (1690s)</option>
+                                <option value="310">Wild West (1870s)</option>
+                                <option value="350">Roaring Twenties (1925)</option>
+                                <option value="560">Cyberpunk Metropolis (2142)</option>
+                                <option value="780">Martian Colony (2300)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="LengthofStay">
+                                Length  of stay(in local days): 
+                            </label>
+                        </td>
+                        <td>
+                            <input type="number" name="LengthofStay" required min="1" max="365" value="1" step="1" id="LengthofStay">
+                        </td>
+                    </tr>
+                </table>
+                <fieldset>
+                    <legend>Preferred time-machine model</legend>
+                    
+                    <input type="radio" name="time-machine" required value="140" id="DeLorean">
+                    <label for="DeLorean">
+                        Classic DeLorean – 88 mph of style
+                    </label>
+                    <br>
+
+                    <input type="radio" name="time-machine" required value="190" id="Steampunk">
+                    <label for="Steampunk">
+                        Steampunk Portal – Gears, brass, and tea 
+                    </label>
+                    <br>
+
+                    <input type="radio" name="time-machine" required value="260" id="QuantumSuit">
+                    <label for="QuantumSuit">
+                        Quantum Suit – Sleek pockets dimensionally bigger on the inside
+                    </label> 
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Optional Temporal Insurance (check all that apply)</legend>
+
+                    <input type="checkbox" name="Insurance" value="75" id="cloneReplace">
+                    <label for="cloneReplace">
+                        Clone replacement (in case you spontaneously cease to exist)
+                    </label>
+                    <br>
+
+                    <input type="checkbox" name="Insurance" value="75" id="historyRewind">
+                    <label for="historyRewind">
+                        Historical rewind (one free do-over, no questions asked)
+                    </label>
+                    <br>
+
+                    <input type="checkbox" name="Insurance" value="75" id="Butterfly-Effect">
+                    <label for="Butterfly-Effect">
+                        Butterfly-Effect waiver (covers minor timeline hiccups)
+                    </label>
+                </fieldset>
+                <div class="sendInfo">
+                    <input type="button" value="Generate Quote" onclick="generateQuote()">
+                </div>
+        
+            </form>
+
+            <div id="validation">
+                <p>Please fill in all the required inputs.</p>
+            </div>
+
+            <div id="quoteResult">
+               <table>
+                    <tr>
+                        <th colspan="2">Here is your Quotation</th>
+                    </tr>
+                    <tr>
+                        <td>Traveller Name</td>
+                        <td id="quoteName"></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Travellers</td>
+                        <td id="numTravellers"></td>
+                    </tr>
+                    <tr>
+                        <td>Destination</td>
+                        <td id="quoteDestination"></td>
+                    </tr>
+                    <tr>
+                        <td>Length of Stay</td>
+                        <td id="duration"></td>
+                    </tr>
+                    <tr>
+                        <td>Preferred Time</td>
+                        <td id="prefTime"></td>
+                    </tr>
+                    <tr>
+                        <td>Insurances</td>
+                        <td id="quoteInsurance"></td>
+                    </tr>
+                    <tr>
+                        <td>Total Cost</td>
+                        <td id="totalCost"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <script src="JavaScript/controller.js"></script>
+    </body>
+</html>

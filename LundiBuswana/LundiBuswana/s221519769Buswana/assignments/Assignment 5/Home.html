@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FunLand</title>
+    <link rel="stylesheet" href="Styles/stylesheet.css" type="text/css">
+</head>
+<body>
+
+<header>
+    <h1>FunLand Amusement Park</h1>
+    <p>Click, explore, and interact!</p>
+</header>
+
+<nav>
+    <button id="toggleRides">Toggle Rides</button>
+    <button id="highlight">Highlight Attractions</button>
+    <button id="fadeOut">Fade Out Page</button>
+</nav>
+
+<section id="rides">
+    <h2>Rides</h2>
+
+    <div class="ride-card" data-type="thrill">
+        <h3>Roller Coaster</h3>
+        <p>High speed thrills!</p>
+    </div>
+
+    <div class="ride-card" data-type="family">
+        <h3>Ferris Wheel</h3>
+        <p>Relaxing views from above.</p>
+    </div>
+
+    <div class="ride-card" data-type="water">
+        <h3>Log Flume</h3>
+        <p>Prepare to get soaked!</p>
+    </div>
+</section>
+
+<section id="games">
+    <h2> Carnival Games</h2>
+    <ul>
+        <li class="game">Ring Toss</li>
+        <li class="game">Duck Shoot</li>
+        <li class="game">Balloon Pop</li>
+    </ul>
+    <button id="shuffleGames">Shuffle Games</button>
+</section>
+
+<section id="tickets">
+    <h2> Buy Tickets</h2>
+
+    <form id="ticketForm">
+        <label>Name:</label>
+        <input type="text" id="name">
+
+        <label>Ticket Type:</label>
+        <select id="ticketType">
+            <option value="50">Child - R50</option>
+            <option value="100">Adult - R100</option>
+            <option value="150">VIP - R150</option>
+        </select>
+
+        <label>Quantity:</label>
+        <input type="number" id="quantity" min="1" value="1">
+
+        <button type="button" id="calculate">Calculate Total</button>
+    </form>
+
+    <p id="total"></p>
+</section>
+
+<button id="catchMe">
+    Click Me
+</button>
+
+<footer>
+    <p> FunLand © 2026</p>
+</footer>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="Scripts/Script.js" type="text/javascript"></script>
+
+</body>
+</html>

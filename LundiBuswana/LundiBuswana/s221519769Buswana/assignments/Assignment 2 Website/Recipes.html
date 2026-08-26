@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipes</title>
+        <link rel="stylesheet" href="Styles/Stylesheet.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+              <h1>Welcome to your personalised Recipe Book</h1>
+              <h2>Discover and share your favourite recipes! Whether you're a beginner or a seasoned chef, you'll find delicious meals to try</h2> 
+        </header>
+
+        <nav>
+            <ol class="Menu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Essentials.html">Essentials</a></li>
+                <li><a href="Recipes.html">Recipes</a></li>
+                <li><a href="Submit.html">Submit</a></li>
+                
+            </ol>
+        </nav>
+
+        <main>
+
+            <section class="recipe-menu">
+                <!--I will make each section carry divs of the same class name in case of same styling but these div naming i will make them differ from other section divs even if this section divs will share common styling with other divs in other section, reason being is in case where i would have to style the second row differently i do not want to struggle-->
+                <div class="meal-type">
+                    <img src="Images/fluffyPancakes.jpg" alt="fluffyPancakes images">
+                </div>
+
+                <div class="meal-type">
+                    <img src="Images/avocadoToast.jpg" alt="Avocado-toast Image">
+                </div>
+
+                <div class="meal-type">
+                    <img src="Images/SpaghettiBolognese.jpg" alt="SpaghettiBolognese Image">
+                </div>
+            </section>
+
+            <section class="recipe-menu">
+                <!--I almost made a mistake here, actually i did i thought having these divs uniquely identified is cool for seperation of of concerns but it backfires in cases where they share common styling it caused code redundancy so i know now that  if they will share same styling i might as well make them share class naming -->
+                <div class="meal-type">
+                    <img src="Images/CapreseSalad.jpg" alt="CapreseSalad Image">
+                </div>
+
+                <div class="meal-type">
+                    <img src="Images/ChocolateMugCake.jpg" alt="ChocolateMugCake Image">
+                </div>
+
+                <div class="meal-type">
+                    <img src="Images/HomemadePizza.jpg" alt="HomemadePizza Image">
+                </div>
+            </section>
+
+        </main>
+
+        
+
+        <footer>
+                <p>Created by Lundiphile Buswana-March 2025</p>
+        </footer>
+
+    </body>
+</html>

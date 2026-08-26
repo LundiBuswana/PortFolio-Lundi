@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Submit</title>
+        <link rel="stylesheet" href="Styles/Stylesheet.css" type="text/css">
+    </head>
+
+    <body>
+
+        <header>
+              <h1>Welcome to your personalised Recipe Book</h1>
+              <h2>Discover and share your favourite recipes! Whether you're a beginner or a seasoned chef, you'll find delicious meals to try</h2> 
+        </header>
+
+        <nav>
+            <ol class="Menu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Essentials.html">Essentials</a></li>
+                <li><a href="Recipes.html">Recipes</a></li>
+                <li><a href="Submit.html" class="active">Submit</a></li>
+                
+            </ol>
+        </nav>
+
+        <main>
+            <p>Submit your favourite recipe and your recipe could be featured on the site!</p>
+
+            <form method="post" enctype="text/plain" action="mailto:isabellet@mandela.ac.za">
+                <fieldset>
+                    <legend>Recipe Submission</legend>
+
+                    <label>
+                        First Name:
+                        <input type="text" id="firstName" name="firstName">
+                    </label>
+
+                    <label>
+                        Email:
+                        <input type="email" id="email" name="email">
+                    </label>
+
+                    <p>What type of recipe will satisfy your sweet tooth?</p>
+
+                    <label>
+                        <input type="radio" name="recipeType" id="breakfast" value="Breakfast" onchange="checkAnswer(this)">
+                        Breakfast
+                    </label>
+
+                    <label>
+                        <input type="radio" name="recipeType" id="lunch" value="Lunch" onchange="checkAnswer(this)">
+                        Lunch
+                    </label>
+
+                    <label>
+                        <input type="radio" name="recipeType" id="dinner" value="Dinner" onchange="checkAnswer(this)">
+                        Dinner
+                    </label>
+
+                    <label>
+                        <input type="radio" name="recipeType" id="desserts" value="Desserts" onchange="checkAnswer(this)">
+                        Desserts
+                    </label>
+
+                    <h4 id="feedback">Correct! Desserts will satisfy your sweet tooth!</h4>
+
+                    <textarea rows="15" cols="100" placeholder="Type your recipe here"></textarea>
+
+                    <button type="submit">Submit Recipe</button>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+                <p>Created by Lundiphile Buswana-March 2025</p>
+        </footer>
+
+        <script>
+            function checkAnswer(selectedOption) {
+                const feedbackElement = document.getElementById('feedback');
+                if (selectedOption.id === 'desserts') {
+                    feedbackElement.style.display = 'block';
+                } else {
+                    feedbackElement.style.display = 'none';
+                }
+            }
+        </script>
+    </body>
+</html>

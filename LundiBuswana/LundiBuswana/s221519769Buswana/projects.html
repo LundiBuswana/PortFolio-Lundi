@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Live assignment previews for Web Systems coursework, showing practical work from assignments 2 through 6."
+    />
+    <link rel="icon" type="image/png" href="images/Profile.png" />
+    <link rel="apple-touch-icon" href="images/Profile.png" />
+    <link rel="mask-icon" href="images/Profile.png" color="#1F3D2B" />
+
+    <title>Assignments — Lundi Buswana</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="profile-badge" href="images/UWC_Degree_Certificate.pdf" target="_blank" rel="noopener" aria-label="Open my certificate">
+        <img src="images/Profile.png" alt="My Face - Click to view certificate" />
+        <span class="badge-hint">Click me, click me!</span>
+      </a>
+      <h1>Assignment Journey</h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">My Story</a></li>
+          <li><a href="projects.html">Assignments</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project-card project-summary">
+        <h2>Assignments as chapters</h2>
+        <p>
+          The assignments below are the work I completed while learning Web Systems. Each one shows the skills I practiced and the lessons I learned along the way.
+        </p>
+      </section>
+
+      <section class="project-card">
+        <h2>Assignment 02 — Recipe Book Website</h2>
+        <figure class="project-screenshot">
+          <img
+            src="images/Assignment2png.png"
+            alt="Screenshot from Assignment 02 recipe book homepage"
+          />
+          <figcaption>Screenshot from Assignment 02 recipe site</figcaption>
+        </figure>
+        <p>
+          My first complete website project. Built with HTML and CSS, this multi-page site is designed to share recipes, help users navigate kitchen content, and explore responsive layout.
+        </p>
+        <p class="project-meta">
+          <strong>Key skills:</strong> page structure, layout, navigation, responsive design.
+        </p>
+        <button type="button" class="preview-btn" data-src="./assignments/Assignment 2 Website/Home.html" aria-controls="preview-frame" aria-expanded="false">Preview Assignment 02</button>
+      </section>
+
+      <section class="project-card">
+        <h2>Assignment 03 — Interactive Game Demo</h2>
+        <figure class="project-screenshot">
+          <img src="images/Assignment3png.png" alt="Screenshot from Assignment 03 interactive game demo" />
+          <figcaption>Screenshot from Assignment 03 interactive game</figcaption>
+        </figure>
+        <p>
+          A fun JavaScript assignment that brought motion and interaction to the browser. This project helped me practice event handling and user feedback.
+        </p>
+        <p class="project-meta">
+          <strong>Key skills:</strong> JavaScript events, DOM interaction, game logic.
+        </p>
+        <button type="button" class="preview-btn" data-src="./assignments/Assignment03/Home.html" aria-controls="preview-frame" aria-expanded="false">Preview Assignment 03</button>
+      </section>
+
+      <section class="project-card">
+        <h2>Assignment 04 — Travel Site</h2>
+        <figure class="project-screenshot">
+          <img src="images/Assignment4png.png" alt="Screenshot from Assignment 04 travel website" />
+          <figcaption>Screenshot from Assignment 04 travel destination page</figcaption>
+        </figure>
+        <p>
+          A multilayered travel website with destination pages, booking form, and travel tips. This assignment improved my ability to organize multi-page navigation.
+        </p>
+        <p class="project-meta">
+          <strong>Key skills:</strong> multi-page design, user flow, form structure.
+        </p>
+        <button type="button" class="preview-btn" data-src="./assignments/Assignment 4/Home.html" aria-controls="preview-frame" aria-expanded="false">Preview Assignment 04</button>
+      </section>
+
+      <section class="project-card">
+        <h2>Assignment 05 — Interactive Page</h2>
+        <figure class="project-screenshot">
+          <img src="images/Assignment5png.png" alt="Screenshot from Assignment 05 interactive page" />
+          <figcaption>Screenshot from Assignment 05 interactive page</figcaption>
+        </figure>
+        <p>
+          This page demonstrates dynamic JavaScript behavior and interactive UI components. It shows how a web system can respond to user actions in real time.
+        </p>
+        <p class="project-meta">
+          <strong>Key skills:</strong> DOM updates, interactive behavior, button actions.
+        </p>
+        <button type="button" class="preview-btn" data-src="./assignments/Assignment 5/Home.html" aria-controls="preview-frame" aria-expanded="false">Preview Assignment 05</button>
+      </section>
+
+      <section class="project-card">
+        <h2>Assignment 06 — Recipe & Submission Site</h2>
+        <figure class="project-screenshot">
+          <img
+            src="images/Assignment6png.png"
+            alt="Screenshot from Assignment 06 recipe and submission page"
+          />
+          <figcaption>Screenshot from Assignment 06 website</figcaption>
+        </figure>
+        <p>
+          This assignment includes a multi-page site with Home, Recipes, Essentials, and Submit pages built inside the Assignment6 folder.
+        </p>
+        <p class="project-meta">
+          <strong>Key skills:</strong> multi-page navigation, recipe layout, form submission.
+        </p>
+        <button type="button" class="preview-btn" data-src="./assignments/Assignment6/Home.html" aria-controls="preview-frame" aria-expanded="false">Preview Assignment 06</button>
+      </section>
+
+      <div id="preview-modal" class="preview-modal" aria-hidden="true">
+        <div class="preview-content">
+          <button class="preview-close" aria-label="Close preview">×</button>
+          <iframe id="preview-frame" src="about:blank" title="Project preview"></iframe>
+          <div class="preview-actions">
+            <a id="open-new" href="#" target="_blank">Open in new tab</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Contact me at s221519769@mandela.ac.za</p>
+    </footer>
+    <script src="js/portfolio.js"></script>
+  </body>
+</html>

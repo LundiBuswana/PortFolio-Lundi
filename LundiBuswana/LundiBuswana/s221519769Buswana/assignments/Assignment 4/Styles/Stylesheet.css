@@ -1,0 +1,168 @@
+/* Neon Blue (#1E90FF) - A glowing, futuristic blue.
+Cyber Purple (#8A2BE2) - Adds a mysterious time-travel feel.
+Deep Space Black (#121212) - Dark background for contrast.
+Retro Gold (#FFD700) -  Gives a vintage sci-fi touch.
+Time Warp Orange (#FF4500) - For buttons and warnings.
+Electric Teal (#00CED1) – Used for glowing UI elements and links. */
+
+/*s221519769 Lundi Buswana*/
+body{
+    background-color: #121212;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    text-align: right;
+    border-bottom: #1E90FF thick ridge;
+}
+
+ul{
+    border-bottom: #FF1493 medium groove;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+li{
+    display: inline;
+    margin: 5em;
+}
+
+a{
+    color: #FF1493;
+}
+
+header{
+    text-align: center;
+    font-size: 150%;
+}
+
+h1{
+    color: #8A2BE2;
+    letter-spacing: 0.3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#homeMain{
+    display: flex;
+}
+
+#homeMain article{
+    flex: 1;
+    margin: 2.5em;
+    text-align: center;
+    color: #1E90FF;
+}
+
+#homeMain article img{
+    height: 375px;
+    width: 100%;
+    border-color: #FF1493;
+    border-style:inset;
+    padding: 0.5em;
+}
+
+#TravelerStories{
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+#TravelerStories div{
+    flex: 1 25%;
+    color: whitesmoke;
+    margin: 3em;
+}
+
+h4{
+    font-style: italic;
+    color: #1E90FF;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#move{
+    order: 6;
+}
+
+table{
+    border-collapse: collapse;
+}
+td,th{
+    background-color:#121212;
+    border: #1E90FF medium solid;
+    padding: 0.5em;
+}
+input{
+    background: #1a1a2e;
+    color:whitesmoke;
+    border: #1E90FF;
+    padding: 0.5em;
+    border-radius: 2em;
+}
+legend{
+    color:#1E90FF;
+}
+label{
+    color: whitesmoke;
+}
+fieldset{
+    
+    border-color: #121212;
+    
+}
+table{
+    margin: auto;
+    width: 50%;
+}
+.sendInfo{
+    text-align: center;
+    margin-top: 15px;
+}
+.sendInfo input[type=button]{
+    color: #1E90FF;
+    margin-bottom: 5em;
+}
+.sendInfo input[type=button]:hover{
+    cursor: pointer;
+    background-color: #FF4500;
+    padding: 5px;
+}
+.bookingForm{
+    width: 60%;
+    margin: auto;
+    background-color: #1a1a2e;
+    border-radius: 15px;
+    padding: 2em;
+    box-shadow: 0 0 20px #1E90FF;
+    margin-top: 2em;
+    box-shadow: 0 0 20px #1E90FF, 0 0 10px #FF1493;
+    border: #FF1493 medium solid;
+}
+
+select{
+    background: #1a1a2e;
+    color:whitesmoke;
+    border: #1E90FF;
+    padding: 0.5em;
+    border-radius: 2em;
+}
+p{
+    color: whitesmoke;
+}
+#quoteResult{
+    text-align: center;
+    display: none;
+}
+td, th {
+    background-color: #121212;
+    border: #1E90FF medium solid;
+    padding: 0.5em;
+    color: whitesmoke; 
+}
+
+
+#validation {
+    display: none;
+}
+th{
+    color: #8A2BE2;
+}

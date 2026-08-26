@@ -1,0 +1,207 @@
+/*Lundi Buswana*/
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    background-color: #fbe8a6;
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background-color: floralwhite;
+    margin-bottom: 0.5em;
+}
+nav{
+    text-align: center;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-top: 1px solid #a8c686;
+    border-bottom: 1px solid #a8c686;
+}
+p{
+    padding: 0.5em;
+}
+h1{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #f4a261;
+}
+h2{
+    text-align: center;
+    font-style: italic;
+    color:#6b4226;
+
+}
+.Menu,li{
+    list-style:none;
+    padding-right: 2em;
+    color: #e76f51;
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: #e76f51;
+}
+a:hover{
+    color: #f4a261;
+}
+
+.active{
+    font-weight: bolder;
+    color: floralwhite;
+    padding: 0.4em;
+    margin: 0.1em;
+}
+
+table,th,td{
+   border:1px solid #a8c686;
+   border-collapse: collapse;
+   padding: 0.5em;
+}
+table{
+    margin: 0 auto;
+}
+.highlight{
+    font-style: italic;
+    color: #e76f51;
+}
+.main-img{
+    border: 3px solid #a8c686;
+    margin: 1em 0 1em 1em;;
+}
+.extLinks li{
+    padding:0;
+    margin:0;
+}
+.extLinks{
+    padding: 0;
+    margin: 0;
+}
+.extLinks a{
+    display: block;
+}
+h3{
+    margin-bottom: 0;
+    padding: 0;
+}
+footer{
+    font-weight: bold;
+    text-align: center;
+    font-size: 70%;
+}
+.main-section{
+    display: flex;
+}
+.left-text-block{
+    width: 25%;
+    order: 3;
+}
+.right-text-block{
+    width: 25%;
+    order: 1;
+}
+.middle-table{
+    width: 50%;
+    order: 2;
+    text-align: center;
+}
+.sub-main{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex:50%; /*This is gave me a nightmare, initially i had this width:50%  in .img-block and .right-content which was not doing what it supposed to do, i forgot tat now that they are in container when i display flex i can as well sent the flex width to  be split in half and not do it seperately*/
+}
+/*So now the .img-block i will remove it here and also in the html home page becuase it holds no unique styling at the moment and leave class .right-block becuase it has specific styling requirements*/
+.right-content{
+    padding: 1.5em;
+    text-align: center;
+}
+.recipe-menu{
+    display: flex;
+}
+/*This part is responsible for divs within my section how each div will behave next to one another */
+.meal-type{
+    min-width: 30%;
+    text-align: center;
+    padding: 1.5em;
+}
+/*Then ndithi apha go inside div but look for all img within and insert this style*/
+.meal-type img{
+    height: 375px;
+    width: 100%;
+}
+.meal-type img:hover{
+    border: 1px solid #a8c686;
+    padding: 1em;
+    background-color: floralwhite;
+}
+
+.personalised-tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip{
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.personalised-tooltip:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+
+fieldset{
+    padding: 2em;
+}
+
+legend{
+    font-weight: bold;
+    color: #6b4226;
+}
+
+#feedback{
+    display: none;;
+}
+
+
+/* Assignment 6 additions */
+.active{
+    background-color: #e76f51;
+    border-radius: 6px;
+}
+
+fieldset{
+    padding: 2em;
+    margin-top: 1em;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+input, textarea{
+    margin-left: 0.5em;
+}
+
+button{
+    display: block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+}
